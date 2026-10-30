@@ -35,7 +35,7 @@ export async function generateMetadata({
 
   return {
     title: `${car.name} Self Drive Car Rental in Guwahati | Brozcars Khanapara`,
-    description: `Rent ${car.name} for self drive in Guwahati, Assam at ₹${car.pricePerDay}/day. ${car.tagline}. Verified, sanitized, instant WhatsApp booking with Brozcars.`,
+    description: `Rent ${car.name} for self drive in Guwahati, Assam. ${car.tagline}. Verified, sanitized, instant WhatsApp booking with Brozcars.`,
     openGraph: {
       title: `${car.name} Self Drive Rental - Brozcars Guwahati`,
       description: car.description,
@@ -59,7 +59,7 @@ export default async function CarDetailPage({
   const otherCars = INITIAL_CARS.filter((c) => c.id !== car.id).slice(0, 3);
 
   const whatsappInquiryUrl = `https://wa.me/${SITE_SETTINGS.whatsappNumber}?text=${encodeURIComponent(
-    `Hi Brozcars! I want to enquire about renting the ${car.name} (₹${car.pricePerDay}/day). Is it available for my dates?`
+    `Hi Brozcars! I want to enquire about renting the ${car.name}. Is it available for my dates?`
   )}`;
 
   return (
@@ -105,25 +105,16 @@ export default async function CarDetailPage({
                 </div>
 
                 {/* Vehicle Header Info Bar */}
-                <div className="p-5 sm:p-6 border-t border-zinc-800/80 bg-zinc-900/60 flex flex-wrap items-center justify-between gap-4">
-                  <div>
-                    <span className="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-[10px] font-black uppercase tracking-wider">
-                      {car.category}
-                    </span>
-                    <h1 className="text-2xl sm:text-3xl font-black text-white font-mono mt-2">
-                      {car.name}
-                    </h1>
-                    <p className="text-xs text-zinc-400 mt-1 font-light">
-                      {car.tagline}
-                    </p>
-                  </div>
-
-                  <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-400 font-mono">
-                      ₹{car.pricePerDay.toLocaleString('en-IN')}
-                    </span>
-                    <span className="text-[11px] text-zinc-400 block font-medium">/ day</span>
-                  </div>
+                <div className="p-5 sm:p-6 border-t border-zinc-800/80 bg-zinc-900/60">
+                  <span className="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-[10px] font-black uppercase tracking-wider">
+                    {car.category}
+                  </span>
+                  <h1 className="text-2xl sm:text-3xl font-black text-white font-mono mt-2">
+                    {car.name}
+                  </h1>
+                  <p className="text-xs text-zinc-400 mt-1 font-light">
+                    {car.tagline}
+                  </p>
                 </div>
               </div>
 
@@ -199,9 +190,9 @@ export default async function CarDetailPage({
                   </div>
 
                   <div className="p-3 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <span className="text-[10px] text-zinc-500 uppercase font-bold block mb-1">Refundable Deposit</span>
+                    <span className="text-[10px] text-zinc-500 uppercase font-bold block mb-1">Security Deposit</span>
                     <div className="flex items-center gap-1.5 text-xs font-semibold text-yellow-400 font-mono">
-                      <span>₹{car.depositAmount.toLocaleString('en-IN')}</span>
+                      <span>100% Refundable</span>
                     </div>
                   </div>
                 </div>
@@ -243,7 +234,7 @@ export default async function CarDetailPage({
                 <ul className="text-xs text-zinc-400 space-y-2 list-disc list-inside">
                   <li>Valid Original Indian Driving License (Minimum 1 year old).</li>
                   <li>Original Aadhaar Card / Passport / Voter ID for address verification.</li>
-                  <li>Refundable security deposit (₹{car.depositAmount}) returned immediately on vehicle handover.</li>
+                  <li>Refundable security deposit returned immediately on vehicle handover.</li>
                   <li>Fuel is provided on same-to-same policy (return at the same fuel level as received).</li>
                   <li>Comprehensive insurance and 24/7 roadside breakdown assistance included.</li>
                 </ul>
@@ -298,7 +289,6 @@ export default async function CarDetailPage({
                       {c.name}
                     </h4>
                     <p className="text-[11px] text-zinc-400">{c.category} • {c.seatingCapacity} Seats</p>
-                    <p className="text-xs font-bold text-yellow-400 font-mono mt-0.5">₹{c.pricePerDay}/day</p>
                   </div>
                 </Link>
               ))}

@@ -105,10 +105,9 @@ export default function Footer() {
                 <li key={car.id}>
                   <Link
                     href={`/cars/${car.id}`}
-                    className="hover:text-yellow-400 transition-colors flex items-center justify-between"
+                    className="hover:text-yellow-400 transition-colors block"
                   >
                     <span>{car.name}</span>
-                    <span className="text-[10px] text-zinc-500 font-mono">₹{car.pricePerDay}/d</span>
                   </Link>
                 </li>
               ))}

@@ -18,15 +18,15 @@ A modern, responsive, luxury automotive static website built for **Brozcars**, a
 ## 🚘 Strict 9-Vehicle Fleet (All AI-Generated Photography)
 The website strictly features only the 9 approved vehicle models with verified technical specifications:
 
-1. **Tata Altroz** – 5-Star Global NCAP Safety Rating | 5 Seater | Manual | Petrol / Diesel (`₹2,000/day`)
-2. **Maruti Baleno** – 22+ km/l Fuel Efficiency | 5 Seater | Manual / Automatic | Petrol (`₹2,000/day`)
-3. **Hyundai i20 Sunroof** – Electric Sunroof & Bose Audio | 5 Seater | Manual / Automatic | Petrol (`₹2,200/day`)
-4. **Mahindra Thar 4×4** – Shift-on-Fly 4x4 & 226mm Clearance | 4 Seater | Manual / Automatic | Diesel (`₹4,500/day`)
-5. **Toyota Innova Crysta** – 7-Seater Captain Chair Touring Comfort | 7 Seater | Manual / Automatic | Diesel (`₹3,800/day`)
-6. **Maruti Swift** – Agile & Economical 24+ kmpl | 5 Seater | Manual | Petrol (`₹1,800/day`)
-7. **Honda City** – Executive Luxury Sedan with Sunroof | 5 Seater | Manual / Automatic | Petrol (`₹2,800/day`)
-8. **Hyundai Venue** – Compact SUV with High Ground Clearance | 5 Seater | Manual / Automatic | Petrol / Diesel (`₹2,500/day`)
-9. **Mahindra Scorpio** – Muscular 7-Seater for Hilly Terrains | 7 Seater | Manual | Diesel (`₹3,500/day`)
+1. **Tata Altroz** – 5-Star Global NCAP Safety Rating | 5 Seater | Manual | Petrol / Diesel
+2. **Maruti Baleno** – 22+ km/l Fuel Efficiency | 5 Seater | Manual / Automatic | Petrol
+3. **Hyundai i20 Sunroof** – Electric Sunroof & Bose Audio | 5 Seater | Manual / Automatic | Petrol
+4. **Mahindra Thar 4×4** – Shift-on-Fly 4x4 & 226mm Clearance | 4 Seater | Manual / Automatic | Diesel
+5. **Toyota Innova Crysta** – 7-Seater Captain Chair Touring Comfort | 7 Seater | Manual / Automatic | Diesel
+6. **Maruti Swift** – Agile & Economical 24+ kmpl | 5 Seater | Manual | Petrol
+7. **Honda City** – Executive Luxury Sedan with Sunroof | 5 Seater | Manual / Automatic | Petrol
+8. **Hyundai Venue** – Compact SUV with High Ground Clearance | 5 Seater | Manual / Automatic | Petrol / Diesel
+9. **Mahindra Scorpio** – Muscular 7-Seater for Hilly Terrains | 7 Seater | Manual | Diesel
 
 ---
 

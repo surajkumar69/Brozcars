@@ -82,7 +82,6 @@ export default function RootLayout({
                 opens: "07:00",
                 closes: "23:00",
               },
-              priceRange: "₹1,800 - ₹4,500/day",
             }),
           }}
         />

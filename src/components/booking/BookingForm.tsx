@@ -127,12 +127,10 @@ export default function BookingForm({ initialCarId, onSuccess, className = '' }:
       `✉️ *Email:* ${email || 'N/A'}\n` +
       `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
       `🚘 *Vehicle:* ${selectedCar.name}\n` +
-      `🏷️ *Daily Rate:* ₹${selectedCar.pricePerDay.toLocaleString('en-IN')}/day\n` +
       `📍 *Pickup Location:* ${pickupLocation}\n` +
       `📅 *Pickup:* ${pickupDate} (${pickupTime})\n` +
       `📅 *Return:* ${returnDate} (${returnTime})\n` +
       `⏱️ *Total Duration:* ${totalDays} Day(s)\n` +
-      `💰 *Estimated Rental Total:* ₹${estimatedTotal.toLocaleString('en-IN')}\n` +
       (message ? `📝 *Message:* ${message}\n` : '') +
       `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
       `*Brozcars - Khanapara, Guwahati, Assam*\n` +
@@ -178,8 +176,8 @@ export default function BookingForm({ initialCarId, onSuccess, className = '' }:
             <span className="font-bold text-white">{submittedBooking.totalDays} Days ({submittedBooking.pickupDate} to {submittedBooking.returnDate})</span>
           </div>
           <div className="flex justify-between text-zinc-400">
-            <span>Estimated Total:</span>
-            <span className="font-bold text-yellow-400 font-mono">₹{submittedBooking.estimatedTotal.toLocaleString('en-IN')}</span>
+            <span>Rates & Quotation:</span>
+            <span className="font-bold text-yellow-400">Shared on WhatsApp</span>
           </div>
         </div>
 
@@ -214,7 +212,7 @@ export default function BookingForm({ initialCarId, onSuccess, className = '' }:
         >
           {cars.map((car) => (
             <option key={car.id} value={car.id} className="bg-zinc-900 text-zinc-100">
-              {car.name} — ₹{car.pricePerDay.toLocaleString('en-IN')}/day ({car.category})
+              {car.name} ({car.category})
             </option>
           ))}
         </select>
@@ -356,18 +354,18 @@ export default function BookingForm({ initialCarId, onSuccess, className = '' }:
         />
       </div>
 
-      {/* Price Summary Live Bar */}
+      {/* Booking Summary Live Bar */}
       <div className="p-4 rounded-xl bg-zinc-900/90 border border-yellow-500/30 flex items-center justify-between">
         <div>
           <span className="text-[11px] text-zinc-400 block">
-            Duration: <strong className="text-white">{totalDays} Day{totalDays > 1 ? 's' : ''}</strong> @ ₹{dailyRate}/day
+            Duration: <strong className="text-white">{totalDays} Day{totalDays > 1 ? 's' : ''}</strong>
           </span>
-          <span className="text-xs text-zinc-400">Zero Hidden Surcharges</span>
+          <span className="text-xs text-zinc-400">Zero Hidden Surcharges • Instant Confirmation</span>
         </div>
         <div className="text-right">
-          <span className="text-[10px] uppercase tracking-wider text-yellow-400 block font-semibold">Estimated Total</span>
-          <span className="text-xl font-black text-yellow-400 font-mono">
-            ₹{estimatedTotal.toLocaleString('en-IN')}
+          <span className="text-[10px] uppercase tracking-wider text-yellow-400 block font-semibold">Best Rates</span>
+          <span className="text-sm sm:text-base font-extrabold text-yellow-400 font-mono">
+            Direct on WhatsApp
           </span>
         </div>
       </div>

@@ -14,7 +14,7 @@ interface CarCardProps {
 
 export default function CarCard({ car, onOpenBooking }: CarCardProps) {
   const whatsappUrl = `https://wa.me/${SITE_SETTINGS.whatsappNumber}?text=${encodeURIComponent(
-    `Hi Brozcars! I am interested in renting the ${car.name} (₹${car.pricePerDay}/day). Could you please let me know its availability?`
+    `Hi Brozcars! I am interested in renting the ${car.name}. Could you please let me know its availability?`
   )}`;
 
   return (
@@ -66,22 +66,14 @@ export default function CarCard({ car, onOpenBooking }: CarCardProps) {
       {/* Card Body */}
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          {/* Header & Price */}
-          <div className="flex items-start justify-between gap-2 mb-3">
-            <div>
-              <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors font-mono">
-                {car.name}
-              </h3>
-              <p className="text-[11px] text-zinc-400 line-clamp-1 mt-0.5 font-light">
-                {car.tagline || car.description}
-              </p>
-            </div>
-            <div className="text-right shrink-0">
-              <span className="text-lg font-black text-yellow-400 font-mono">
-                ₹{car.pricePerDay.toLocaleString('en-IN')}
-              </span>
-              <span className="text-[10px] text-zinc-400 block font-medium">/ day</span>
-            </div>
+          {/* Header */}
+          <div className="mb-3">
+            <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors font-mono">
+              {car.name}
+            </h3>
+            <p className="text-[11px] text-zinc-400 line-clamp-1 mt-0.5 font-light">
+              {car.tagline || car.description}
+            </p>
           </div>
 
           {/* Verified Specifications Grid */}

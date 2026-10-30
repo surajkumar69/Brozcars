@@ -94,7 +94,7 @@ export default function About() {
                 <CheckCircle2 className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-bold text-white">Transparent Rental Terms</h4>
-                  <p className="text-xs text-zinc-400 mt-1">Clear daily prices, zero hidden surcharges, and refundable security deposits.</p>
+                  <p className="text-xs text-zinc-400 mt-1">Best rates guaranteed, zero hidden surcharges, and refundable security deposits.</p>
                 </div>
               </div>
 
